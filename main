@@ -1,0 +1,29 @@
+class ContohKelas {
+  // 2 fields
+  String field1;
+  String field2;
+
+  // Constructor dengan this keyword
+  ContohKelas(this.field1, this.field2);
+
+  // Method pertama dengan 3 fields
+  String method1(String a, String b, String c) {
+    return "Method1 - a: $a, b: $b, c: $c, field1: $field1, field2: $field2";
+  }
+
+  // Method kedua dengan 3 fields
+  String method2(String x, String y, String z) {
+    return "Method2 - x: $x, y: $y, z: $z, field1: $field1, field2: $field2";
+  }
+}
+
+void main() {
+  // Membuat instance dari ContohKelas
+  ContohKelas obj = ContohKelas('Value1', 'Value2');
+  
+  // Memanggil method1
+  print(obj.method1('A', 'B', 'C'));
+  
+  // Memanggil method2
+  print(obj.method2('X', 'Y', 'Z'));
+}
